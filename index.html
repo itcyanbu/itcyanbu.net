@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Fitness Coach Services (Premium)</title>
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  body { font-family: 'Arial', sans-serif; margin: 20px; line-height: 1.6; background-color: #f7f8fa; color: #333; }
+  
+  h1 { text-align: center; margin-bottom: 2rem; font-weight: 700; color: #222; }
+
+  /* Tabs */
+  .tabs { text-align: center; margin-bottom: 2rem; }
+  .tabs button {
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  .tabs button.active { background-color: #333; color: #fff; }
+
+  /* Collapsible */
+  details {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-left: 4px solid #4caf50;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  }
+  details[open] { background-color: #f0fdf4; }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+  }
+  summary:hover { color: #4caf50; }
+
+  .service-content { margin-top: 0.5rem; font-size: 0.95rem; }
+
+  .rtl { text-align: right; direction: rtl; }
+
+  /* Fade effect for language switch */
+  .fade { opacity: 0; transition: opacity 0.4s; display: none; }
+  .fade.show { opacity: 1; display: block; }
+
+  /* Icon styling */
+  .icon { color: #4caf50; min-width: 20px; text-align: center; }
+
+  /* Hover effect for details */
+  details:hover { transform: translateY(-2px); transition: transform 0.2s; }
+
+  @media (max-width: 768px) {
+    summary { font-size: 1rem; flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<h1>AI Fitness Coach — Services</h1>
+
+<div class="tabs">
+  <button id="enBtn" class="active">English</button>
+  <button id="arBtn">Arabic</button>
+</div>
+
+<!-- English Services -->
+<div id="servicesEn" class="fade show">
+  <details>
+    <summary><i class="fas fa-dumbbell icon"></i> Personalized Workout Plan</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Plans tailored to your schedule, goals and equipment.</p>
+      <p>We create a personalized training plan that fits your calendar, fitness level, and available equipment. Plans adapt automatically based on progress, feedback, and logged workouts.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-stopwatch icon"></i> Short, Efficient Workouts</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> 10–25 minute sessions designed for busy days.</p>
+      <p>High-impact, time-efficient workouts (10–25 minutes) focusing on strength, mobility and cardio. Each session includes clear video/audio guidance and warm-up/cool-down.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-apple-alt icon"></i> Nutrition Guidance</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Simple, practical meal suggestions and tracking.</p>
+      <p>Daily meal suggestions, macro targets, and simple shopping lists tailored to your preferences and goals. Sync meals with progress for intelligent adjustments.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-chart-line icon"></i> Progress Tracking & Analytics</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Actionable insights and visual progress snapshots.</p>
+      <p>Track workouts, weight, sleep and energy. Interactive charts show trends; the AI suggests plan tweaks when progress stalls.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-video icon"></i> On-demand Video Coaching</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Short technique videos and 1:1 micro-coaching sessions.</p>
+      <p>Access a library of short coaching videos and book quick 1:1 micro-coaching sessions to fix form or get motivation when you need it.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-bed icon"></i> Stress & Sleep Micro-Coaching</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Guided breathing, naps, and sleep hygiene tips.</p>
+      <p>Science-backed micro-interventions for stress reduction and sleep improvement, including breathing exercises and evening routines.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-calendar-alt icon"></i> Calendar Integration</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Sync workouts with Google/Apple Calendar.</p>
+      <p>Sync sessions to your calendar and get reminder nudges so workouts actually happen. Reschedule intelligently when meetings conflict.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-users icon"></i> Corporate & Team Programs</summary>
+    <div class="service-content">
+      <p><strong>Short:</strong> Team challenges, leaderboards and wellness reporting.</p>
+      <p>Offer employee wellbeing programs with team challenges, aggregated analytics for HR, and privacy-first reporting.</p>
+    </div>
+  </details>
+</div>
+
+<!-- Arabic Services -->
+<div id="servicesAr" class="rtl fade">
+  <details>
+    <summary><i class="fas fa-dumbbell icon"></i> خطة تدريب شخصية</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> خطط مكيّفة مع جدولك وأهدافك والمعدات المتاحة.</p>
+      <p>ننشئ خطة تدريب شخصية تتوافق مع جدولك، مستوى لياقتك، والمعدات المتاحة. تتكيف الخطط تلقائياً بناءً على التقدّم وردود الفعل والتمارين المسجّلة.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-stopwatch icon"></i> تمارين قصيرة فعالة</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> جلسات مدتها 10–25 دقيقة مصمّمة لأيام الانشغال.</p>
+      <p>تمارين مركّزة وفعّالة زمنياً (10–25 دقيقة) تركز على القوة والمرونة والتمارين الهوائية، مع إرشادات فيديو/صوتية واضحة وإحماء/تهدئة.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-apple-alt icon"></i> إرشاد تغذوي</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> اقتراحات وجبات بسيطة وتتبع سهل.</p>
+      <p>اقتراحات يومية للوجبات، أهداف مغذيات، وقوائم تسوّق بسيطة تتناسب مع تفضيلاتك وأهدافك. يتم مزامنة الوجبات مع التقدّم لتعديلات ذكية.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-chart-line icon"></i> تتبع التقدّم والتحليلات</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> رؤى عملية ومخططات تقدم مرئية.</p>
+      <p>تتبّع التمارين والوزن والنوم والطاقة. تعرض المخططات التفاعلية الاتجاهات؛ ويقترح النظام تعديلات على الخطة عند ثبات التقدّم.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-video icon"></i> تدريب فيديو عند الطلب</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> فيديوهات تقنية قصيرة وجلسات تدريب فردية قصيرة.</p>
+      <p>الوصول إلى مكتبة فيديوهات تدريب قصيرة وحجز جلسات تدريب فردية سريعة لتصحيح التقنية أو الحصول على دفعة تحفيزية عند الحاجة.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-bed icon"></i> تدريب صغير للنوم والضغط</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> تمارين تنفّس وإرشادات نوم سريعة.</p>
+      <p>تدخلات مصغّرة مدعومة علمياً لتقليل التوتر وتحسين النوم، بما في ذلك تمارين التنفّس وروتينات المساء.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-calendar-alt icon"></i> مزامنة مع التقويم</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> مزامنة التمارين مع تقويم Google/Apple.</p>
+      <p>مزامنة الجلسات مع تقويمك والحصول على تذكيرات لالتزامك بالتمارين. إعادة جدول ذكية عند تعارض الاجتماعات.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-users icon"></i> برامج للشركات والفرق</summary>
+    <div class="service-content">
+      <p><strong>باختصار:</strong> تحديات فرق، لوحات متصدّرين وتقارير العافية.</p>
+      <p>قدّم برامج رفاهية للموظفين مع تحديات فرق، تحليلات مجمّعة لإدارة الموارد البشرية، وتقارير تراعي الخصوصية.</p>
+    </div>
+  </details>
+</div>
+
+<script>
+  const enBtn = document.getElementById('enBtn');
+  const arBtn = document.getElementById('arBtn');
+  const servicesEn = document.getElementById('servicesEn');
+  const servicesAr = document.getElementById('servicesAr');
+
+  enBtn.addEventListener('click', () => {
+    servicesAr.classList.remove('show');
+    setTimeout(() => { servicesAr.style.display = 'none'; }, 400);
+    servicesEn.style.display = 'block';
+    setTimeout(() => { servicesEn.classList.add('show'); }, 10);
+    enBtn.classList.add('active');
+    arBtn.classList.remove('active');
+  });
+
+  arBtn.addEventListener('click', () => {
+    servicesEn.classList.remove('show');
+    setTimeout(() => { servicesEn.style.display = 'none'; }, 400);
+    servicesAr.style.display = 'block';
+    setTimeout(() => { servicesAr.classList.add('show'); }, 10);
+    enBtn.classList.remove('active');
+    arBtn.classList.add('active');
+  });
+</script>
+
+</body>
+</html>
